@@ -1,0 +1,113 @@
+/* EmployeeLogin.css */
+
+/* Container styles */
+.login {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    padding: 20px;
+    box-sizing: border-box; 
+  }
+  
+  /* Left login container styles */
+  .left-login {
+    background-color: #37517e;
+    border-radius: 8px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    height: 100%;
+    margin-left: 20px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  
+  /* Image styles */
+  .right_login img {
+    width: 35%; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    border: 2px solid #fff; /* Border around the image */
+    border-radius: 8px; /* Border radius to match the container */
+    margin: 0; /* Remove default margin */
+  }
+  
+  /* Right login form container styles */
+  .right_login {
+    flex: 1; 
+    padding: 20px;
+    background-color: #f1f1f1;
+    border-radius: 8px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Login title styles */
+  .login-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  /* Input container styles */
+  .login-inputcontainer {
+    margin-bottom: 20px;
+  }
+  
+  /* Input styles */
+  .login-input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Button styles */
+  .login-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Button hover effect */
+  .login-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Footer description styles */
+  .login-footer-desc {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  /* Footer link styles */
+  .login-footer-desc a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  /* Footer link hover effect */
+  .login-footer-desc a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Media Query for Responsive Design */
+  @media (max-width: 768px) {
+    .login {
+      flex-direction: column;
+    }
+    
+    .left-login, .right_login {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+  

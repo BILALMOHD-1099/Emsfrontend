@@ -1,0 +1,96 @@
+.admin-dashboard-container {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f8f9fa; /* Light gray background */
+  height: 100vh;
+}
+
+.left__panel {
+  width: 250px;
+  background-color: #172534; /* Change to the desired color */
+  color: #fff;
+  padding: 20px;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.menu {
+  margin-top: 20px;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.menu-item:hover {
+  background-color: #495057; /* Darker hover color */
+}
+
+.menu-item span {
+  margin-left: 10px;
+}
+
+.content {
+  flex-grow: 1;
+  padding: 20px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+}
+
+.panel {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.right__panel {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: transparent; /* Change to the desired color */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Add box shadow */
+}
+
+
+
+/* Style for Avatar */
+.MuiAvatar-root {
+  cursor: pointer;
+}
+
+/* Style for file input */
+input[type="file"] {
+  display: none;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  .admin-dashboard-container {
+    flex-direction: column;
+  }
+  
+  .left-panel {
+    width: 100%;
+  }
+  
+  .content {
+    padding: 0;
+  }
+}

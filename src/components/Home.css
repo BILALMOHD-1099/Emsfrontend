@@ -1,0 +1,138 @@
+/* Base hero section styles */
+.hero-section {
+  padding: 80px 0; /* Adjusted padding */
+  position: relative;
+}
+
+/* Hero title styles */
+.hero-title {
+  font-size: 36px; /* Reduced font size */
+  font-weight: 700;
+  margin-bottom: 10px; /* Reduced margin */
+  color: #333;
+  animation: fadeInUp 1s ease-out forwards;
+}
+
+/* Hero subtitle styles */
+.hero-subtitle {
+  font-size: 16px; /* Reduced font size */
+  margin-bottom: 15px; /* Reduced margin */
+  color: #fdfdfd;
+  animation: fadeInUp 1s ease-out forwards 0.5s;
+}
+
+/* Call-to-action buttons styles */
+.cta-buttons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Button styles */
+.btn {
+  font-size: 14px; /* Reduced font size */
+  font-weight: 600;
+  padding: 10px 25px; /* Reduced padding */
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Primary button styles */
+.btn-primary {
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+/* Secondary button styles */
+.btn-secondary {
+  color: #007bff;
+  background-color: transparent;
+  border: 2px solid #007bff;
+  margin-left: 10px; /* Reduced margin */
+}
+
+.btn-secondary:hover {
+  color: #0056b3;
+  border-color: #0056b3;
+}
+
+/* Hero image container styles */
+.hero-img-container {
+  text-align: center;
+  animation: fadeInUp 1s ease-out forwards 1s, imageSpin 10s linear infinite;
+}
+
+/* Hero image styles */
+.hero-img {
+  max-width: 80%; /* Reduced image size */
+  height: auto;
+  animation: fadeInUp 1s ease-out forwards; /* Added animation */
+}
+
+/* Media queries */
+@media (max-width: 992px) {
+  .hero-title {
+    font-size: 28px; /* Reduced font size */
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 24px; /* Reduced font size */
+    margin-bottom: 5px; /* Further reduced margin */
+  }
+  
+  .hero-subtitle {
+    font-size: 14px;
+    margin-bottom: 10px; /* Reduced margin */
+  }
+  
+  .btn {
+    font-size: 12px; /* Reduced font size */
+    padding: 8px 20px; /* Reduced padding */
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-section {
+    padding: 60px 0; /* Adjusted padding */
+  }
+  
+  .hero-title {
+    font-size: 20px; /* Reduced font size */
+    margin-bottom: 5px; /* Further reduced margin */
+  }
+  
+  .hero-subtitle {
+    font-size: 12px; /* Reduced font size */
+    margin-bottom: 10px; /* Reduced margin */
+  }
+}
+
+/* Keyframe animations */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes imageSpin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
